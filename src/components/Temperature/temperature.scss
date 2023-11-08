@@ -1,0 +1,46 @@
+/* current-temperature */
+.current-temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25em;
+  width: 100%;
+}
+
+.current-temperature__icon-container {
+  flex-grow: 1.25;
+  text-align: center;
+}
+
+.current-temperature__content-container {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.current-temperature__icon {
+  width: 10.5em;
+  transform: scale(2);
+}
+
+.current-temperature__value {
+  color: white;
+  font-size: 5.25em;
+  font-weight: 300;
+}
+
+.current-temperature__summary {
+  color: white;
+  margin-top: -0.5em;
+  margin-left: -0.6em;
+  text-align: center;
+  font-size: 1.125em;
+}
+
+@media screen and (min-width: 700px) {
+  .current-temperature {
+    width: 50%;
+  }
+}

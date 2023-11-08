@@ -1,0 +1,22 @@
+.grid_wrapper {
+  max-width: 1280px;
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 4rem;
+
+  h1 {
+    color: white;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .grid_content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
